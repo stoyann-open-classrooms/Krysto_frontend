@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import Spinner from '../components/shared/spinner/Spinner'
 import { getOffer, reset } from '../features/offer/offerSlice'
-import Coins from '../assets/coins/coinGif.gif'
+
 
 
 function Offer() {
@@ -64,7 +64,7 @@ function Offer() {
         <div className="offer-price">
           <div className="price">
             <p>{offer.offer.amountMony}</p>
-            <img src={Coins} alt="" />
+          
           </div>
           <div className="offer-info">
             <p className="price-translate">
