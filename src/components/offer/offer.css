@@ -1,0 +1,38 @@
+.offer-cover {
+  width: 100%;
+  border-radius: 10px;
+}
+.offer-cover img {
+  border-radius: 10px;
+  width: 100%;
+  height: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.offer-info-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: grey;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.price img {
+  height: 3rem;
+  margin-left: 10px;
+}
+
+.offer-description {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=offer.css.map */

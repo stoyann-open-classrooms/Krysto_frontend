@@ -466,7 +466,7 @@ function Cgv() {
         </p>
         <p>
           Le Client est également informé qu’il peut, également recourir à la
-          plateforme de Règlement en Ligne des Litige (RLL). <br />
+          plateforme de Règlement en Ligne des Litige (RLL). br
           Tous les litiges auxquels les opérations d'achat et de vente conclues
           en application des présentes CGV et qui n’auraient pas fait l’objet
           d’un règlement amiable entre le vendeur ou par médiation, seront

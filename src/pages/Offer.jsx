@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import Spinner from '../components/shared/spinner/Spinner'
 import { getOffer, reset } from '../features/offer/offerSlice'
-
-
+import '../components/offer/offer.css'
+import coco from '../assets/coco_svg/Fichier 1.svg'
 
 function Offer() {
   const [toggleModal, setToggleModal] = useState(false)
@@ -36,7 +36,10 @@ function Offer() {
     return <Spinner />
   }
   return (
-    <div className='page-content' >
+    <>
+      <section className="heading">
+        <h1 className="title title-offer ">{offer.offer.title}</h1>
+      </section>
       <div className="offer-cover">
         <img
           src={`http://152.228.137.213:4001/${offer.offer.gallery[0]}`}
@@ -44,27 +47,19 @@ function Offer() {
         />
       </div>
 
-      <div className="box-offer-info">
+      <div className="offer-info-top">
         <div className="offer-datetime">
-          <p className='publish'>
+          <p className="publish">
             Publiée le :
-            <span>
-
-             {new Date(offer.offer.created).toLocaleDateString()}
-            </span>
+            <span>{new Date(offer.offer.created).toLocaleDateString()} </span>
           </p>
-          <p className='publish'>
-           par :
-            <span>
-{offer.offer.creator.name}
-            </span>
-          </p>
+          par :<span>{offer.offer.creator.name}</span>
         </div>
 
         <div className="offer-price">
           <div className="price">
             <p>{offer.offer.amountMony}</p>
-          
+            <img src={coco} alt="" />
           </div>
           <div className="offer-info">
             <p className="price-translate">
@@ -74,18 +69,15 @@ function Offer() {
         </div>
       </div>
 
-      <div className="buttons mt-5">
-        <button className="submit-btn" onClick={toggle}>
+    
+
+      <div className="offer-description">{offer.offer.text}</div>
+      <div>
+        <button className="btn btn-block" onClick={toggle}>
           Contacter le vendeur
         </button>
-       
       </div>
-      <h1 className="title title-offer ">{offer.offer.title}</h1>
-
-      <div className="box box-description">{offer.offer.text}</div>
-
-     
-    </div>
+    </>
   )
 }
 
