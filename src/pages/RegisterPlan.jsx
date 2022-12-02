@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import coco1 from '../assets/coco_svg/Fichier 1.svg'
+import coco2 from '../assets/coco_svg/Fichier 2.svg'
+import coco3 from '../assets/coco_svg/Fichier 7.svg'
 
 function RegisterPlan() {
   return (
@@ -19,19 +22,23 @@ function RegisterPlan() {
       </p>
       <div className="boxes">
         <div>
-          <h2>200 XPF / Mois</h2>
+          <img src={coco1} alt="" />
+          <h2>400 XPF / Mois</h2>
           <p>Engagement d'un mois renouvelable <br /> Résiliable à tout moment.</p>
           <button className="btn btn-block">Choisir cette formule</button>
           <a href="#"> Détails de l'offre</a>
         </div>
         <div>
-          <h2>Gratuit</h2>
+        <img src={coco2} alt="" />
+          <h2>Gratuit a vie !</h2>
           <p>En vous inscrivant dés aujourd'hui <br /> Vous bénéficier d'un compte <strong>gratuit a vie !</strong></p>
           <Link to={'/register'}>  <button className="btn btn-block">Choisir cette formule</button></Link>
           <a href="#"> Détails de l'offre</a>
         </div>
         <div>
-          <h2>1 800 XPF / Mois</h2>
+        <img src={coco3} alt="" />
+
+          <h2>3 800 XPF / Mois</h2>
           <p>Engagement d'un an renouvelable <br /> Résiliable à tout moment.</p>
           <button className="btn btn-block">Choisir cette formule</button>
           <a href="#"> Détails de l'offre</a>

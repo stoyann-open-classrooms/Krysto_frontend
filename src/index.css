@@ -113,6 +113,10 @@ h3 {
   margin: 30px 0;
 }
 
+.boxes img {
+  height: 15rem;
+}
+
 .boxes div {
   padding: 30px;
   border: 1px solid #9097e1;
@@ -121,10 +125,12 @@ h3 {
 
 .boxes h2 {
   margin-top: 20px;
+  font-size: 2.3rem;
 }
 
 .boxes p {
   margin: 20px 0;
+  font-size: 1.5rem;
 }
 
 .boxes a {
@@ -433,7 +439,7 @@ footer {
     transform: rotate(360deg);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   .boxes {
     grid-template-columns: 1fr;
   }
