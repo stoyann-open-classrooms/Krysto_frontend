@@ -1,0 +1,60 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+@import '../../../SASS/placeholders';
+
+.account-btn {
+  margin: 0 1rem;
+  background-color: $primary;
+  width: 50%;
+  border-radius: $radius;
+  text-align: center;
+  font-size: 2rem;
+}
+.account-btn-active {
+  margin: 0 1rem;
+  background-color: $secondary;
+  color: $dark;
+  width: 50%;
+  border-radius: $radius;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.account-btn-container {
+  margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+
+}
+
+.container-graph {
+  padding: 3rem;
+}
+
+
+.buttons {
+    display: flex;
+    flex: 1;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    button{
+        width: 50%;
+        background-color: $primary;
+        margin: 0 1rem;
+        padding: 1rem;
+        font-size: 2rem;
+        border-radius: $radius;
+        transition:  all 0.3s ease-out;
+        &:hover{
+            color: white;
+            background-color: $primary;
+        }
+    }
+}
+
+.cours {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-around;
+}

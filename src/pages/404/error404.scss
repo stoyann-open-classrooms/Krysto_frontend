@@ -1,0 +1,47 @@
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+@import '../../SASS/placeholders';
+
+.main-404 {
+  background-color: $primary-dark;
+  text-align: center;
+  color: $light;
+  margin-top: 8rem;
+  img {
+    height: 400px;
+  }
+  h2 {
+    color: $complementary2;
+    font-size: 8rem;
+    margin-bottom: 6rem;
+  }
+  h1 {
+    color: $danger;
+    font-size: 35px;
+
+    font-size: 6rem;
+  }
+  h3 {
+    color: $light;
+
+    font-size: 4rem;
+  }
+}
+.coins-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-error {
+  color: $secondary;
+  background-color: transparent;
+  border-color: $secondary;
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    background-color: $secondary;
+
+    color: $primary-dark;
+  }
+}

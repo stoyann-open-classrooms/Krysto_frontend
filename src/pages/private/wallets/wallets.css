@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+main {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 1.7;
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.account-btn {
+  margin: 0 1rem;
+  background-color: #9097e1;
+  width: 50%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.account-btn-active {
+  margin: 0 1rem;
+  background-color: #62ebca;
+  color: #333;
+  width: 50%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.account-btn-container {
+  margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+}
+
+.container-graph {
+  padding: 3rem;
+}
+
+.buttons {
+  display: flex;
+  flex: 1;
+  margin-bottom: 3rem;
+  padding: 3rem;
+}
+.buttons button {
+  width: 50%;
+  background-color: #9097e1;
+  margin: 0 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+}
+.buttons button:hover {
+  color: white;
+  background-color: #9097e1;
+}
+
+.cours {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=wallets.css.map */

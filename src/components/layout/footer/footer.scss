@@ -1,0 +1,53 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+@import '../../../SASS/placeholders';
+
+.footer {
+  background-color: $primary;
+  height:  40rem;
+  
+  padding: 1rem 1rem 1rem 6rem;
+  width: 100%;
+  z-index: 999999;
+}
+
+.social-media-container {
+  a {
+    font-size: 30px;
+    margin: 0 20px;
+    border: none;
+    color: $dark;
+    background-color: transparent;
+  }
+}
+
+
+.footer-nav-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav-section{
+  p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    color: $dark;
+  }
+ul{
+  li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+transition: all 0.2s;
+    &:hover{
+      color: $secondary;
+    }
+  }
+}
+}
+
+.all-right-reserved{
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
